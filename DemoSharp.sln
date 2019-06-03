@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloApp", "HelloApp\HelloApp.csproj", "{2D22595D-907F-421B-B3E2-5181B641BA44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementyC", "ElementyC\ElementyC.csproj", "{B012296A-D091-44C8-B791-FD6F9227D636}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D22595D-907F-421B-B3E2-5181B641BA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D22595D-907F-421B-B3E2-5181B641BA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D22595D-907F-421B-B3E2-5181B641BA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D22595D-907F-421B-B3E2-5181B641BA44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B012296A-D091-44C8-B791-FD6F9227D636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B012296A-D091-44C8-B791-FD6F9227D636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B012296A-D091-44C8-B791-FD6F9227D636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B012296A-D091-44C8-B791-FD6F9227D636}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A46C7FB-5D03-40F2-A514-6DE82BD87764}
+	EndGlobalSection
+EndGlobal
