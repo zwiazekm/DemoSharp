@@ -1,0 +1,20 @@
+ Kompilator  Runtime CLR
+c# -> MSIL -> BIN
+
+CLR - Common Language Runtime
+- JIT kompilacaj
+- zarz¹dzanie dll
+- zarz¹dzanie pamiêci¹ (Grabage Collector)
+- InterOp - WinApi32, COM+
+- kontrola poprawnoœci kodu
+
+exec.
+PE
+Win32
+<- CLR - mscoree.dll
+--------------
+MSIL
+------------
+RES
+
+
