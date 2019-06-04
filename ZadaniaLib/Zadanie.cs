@@ -9,10 +9,10 @@ namespace Szkolenie.ZadaniaLib
     public class Zadanie
     {
         private static int ostatnieId;
-        private int id;
-        private string temat;
-        private DateTime planowanyTermin;
-        private bool wykonane;
+        protected int id;
+        protected string temat;
+        protected DateTime planowanyTermin;
+        protected bool wykonane;
 
         static Zadanie()
         {
@@ -40,7 +40,14 @@ namespace Szkolenie.ZadaniaLib
             ostatnieId = 100;
         }
 
-        public string OpisZadania()
+        public virtual string OpisZadania()
+        {
+            return $"ID: {id}, Temat: {temat}," +
+                $" Termin: {planowanyTermin.ToShortDateString()}, " +
+                $"Wyknane:{wykonane}";
+        }
+
+        public string OpisZadaniaN()
         {
             return $"ID: {id}, Temat: {temat}," +
                 $" Termin: {planowanyTermin.ToShortDateString()}, " +
