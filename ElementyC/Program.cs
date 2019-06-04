@@ -16,17 +16,35 @@ namespace ElementyC
             //Pętle();
             //Tablice();
             //WywolaniaMetod();
-            try
-            {
-                MetodaZBledem();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            Console.WriteLine("Po catch main");
-        }
+            //try
+            //{
+            //    MetodaZBledem();
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //Console.WriteLine("Po catch main");
+            int a = 10;
+            int b = a;
+            b = 30;
+            int? n = 10;
+            //Nullable<int> nc;
+            n = null;
 
+            Person p1 = new Person();
+            p1.name = "Testus Testowicz";
+            p1.age = 35;
+            string txt1 = null;
+
+            Person p2 = p1;
+            p2.age = 50;
+            p1.name = "Janko Walski";
+            Console.WriteLine($"{p1.name}, wiek: {p1.age}");
+            Console.WriteLine($"{p2.name}, wiek: {p2.age}");
+
+        }
+ 
         public static void MetodaZBledem()
         {
             try
@@ -246,5 +264,11 @@ namespace ElementyC
             else
                 wynik = "Kiepso w IF";
         }
+    }
+
+    class Person
+    {
+        public string name;
+        public int age;
     }
 }

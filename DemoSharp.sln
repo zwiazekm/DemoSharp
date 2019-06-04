@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloApp", "HelloApp\HelloA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementyC", "ElementyC\ElementyC.csproj", "{B012296A-D091-44C8-B791-FD6F9227D636}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadaniaCmd", "ZadaniaCmd\ZadaniaCmd.csproj", "{AAC4F0C4-A5ED-49C9-89C5-5111B6A301C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadaniaLib", "ZadaniaLib\ZadaniaLib.csproj", "{57B4F908-5011-4E3C-B744-382D1D22063D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B012296A-D091-44C8-B791-FD6F9227D636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B012296A-D091-44C8-B791-FD6F9227D636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B012296A-D091-44C8-B791-FD6F9227D636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC4F0C4-A5ED-49C9-89C5-5111B6A301C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC4F0C4-A5ED-49C9-89C5-5111B6A301C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC4F0C4-A5ED-49C9-89C5-5111B6A301C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC4F0C4-A5ED-49C9-89C5-5111B6A301C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B4F908-5011-4E3C-B744-382D1D22063D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B4F908-5011-4E3C-B744-382D1D22063D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B4F908-5011-4E3C-B744-382D1D22063D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B4F908-5011-4E3C-B744-382D1D22063D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
