@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Element.cs" />
+    <Compile Include="NumerZadania.cs" />
     <Compile Include="Oplata.cs" />
+    <Compile Include="Projekt.cs" />
+    <Compile Include="StatusZadania.cs" />
     <Compile Include="Zadanie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZadanieProjektowe.cs" />
