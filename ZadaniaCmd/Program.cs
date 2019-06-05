@@ -61,14 +61,39 @@ namespace ZadaniaCmd
             //Console.WriteLine(pr2.NazwaProjektu);
             //Console.WriteLine(pr3.NazwaProjektu);
 
-            NumerZadania nr1 = new NumerZadania(1, "Proj1");
+            //NumerZadania nr1 = new NumerZadania(1, "Proj1");
 
-            NumerZadania nr2 = "124/pROJ1";
-            nr2.nr = 2;
-            //nr2.sufix = "Prj";
+            //NumerZadania nr2 = "124/pROJ1";
+            //nr2.nr = 2;
+            ////nr2.sufix = "Prj";
 
-            Console.WriteLine(nr1);
-            Console.WriteLine(nr2);
+            //Console.WriteLine(nr1);
+            //Console.WriteLine(nr2);
+
+            //Oplata op1 = new Oplata("Platnosc1", 
+            //    DateTime.Now.AddDays(-2), 230);
+            //op1.liczenieOdsetek += MojeOdsetki;
+            //op1.liczenieOdsetek += kw => kw * 0.2M;
+            //op1.PrzySplacie += Op1_PrzySplacie;
+            //op1.Splata(30);
+            //op1.NaliczOdsetki();
+            //op1.NaliczOdsetki2(MojeOdsetki);
+            //op1.NaliczOdsetki2(kw => kw * 0.2M);
+            //op1.NaliczOdsetki3(kw => kw * 0.4M);
+            //Console.WriteLine(op1.OpisZadania());
+            //op1.Splata(500);
+            //Console.WriteLine(op1.OpisZadania());
+
+        }
+
+        private static void Op1_PrzySplacie(object sender, EventArgs e)
+        {
+            Console.WriteLine("Splacono");
+        }
+
+        static decimal MojeOdsetki(decimal kwota)
+        {
+            return kwota * 0.2M;
         }
     }
 

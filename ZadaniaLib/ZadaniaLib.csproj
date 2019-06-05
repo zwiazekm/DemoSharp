@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Element.cs" />
+    <Compile Include="IObslugaZadan.cs" />
     <Compile Include="NumerZadania.cs" />
     <Compile Include="Oplata.cs" />
+    <Compile Include="OrganizerZadan.cs" />
     <Compile Include="Projekt.cs" />
     <Compile Include="StatusZadania.cs" />
     <Compile Include="Zadanie.cs" />
