@@ -37,5 +37,11 @@ namespace Szkolenie.ZadaniaLib
         {
             return new List<string>(); //TODO: Dorobić liste zadań
         }
+
+        //Indexer
+        public Zadanie this[int index]
+        {
+            get { return listaZadan[index]; }
+        }
     }
 }

@@ -4,16 +4,16 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using Szkolenie.ZadaniaLib;
 
 namespace ZadaniaCmd
 {
     internal class ObslugaZadan
     {
         //private static string[] zadania = new string[5];
-        private static List<string> zadania = new List<string>();
+        //private static List<string> zadania = new List<string>();
         //ArrayList z = new ArrayList();
+        private static IObslugaZadan organizer = new OrganizerZadan();
 
         internal static void Menu()
         {
@@ -79,16 +79,17 @@ namespace ZadaniaCmd
                 return;
             }
             //Dodanie do listy zadań
-            zadania.Add($"Temat: {temat}, Termin: {termin.ToShortDateString()}");
+            //zadania.Add($"Temat: {temat}, Termin: {termin.ToShortDateString()}");
+            organizer.DodajZadanie(temat, termin);
         }
 
         private static void ListaZadan()
         {
-            int nrPozycji = 1;
+            //int nrPozycji = 1;
             Console.WriteLine("Lista zadań:");
-            foreach (var zadanie in zadania)
+            foreach (var zadanie in organizer.ListaZadan())
             {
-                Console.WriteLine($"{nrPozycji++} - {zadanie}");
+                Console.WriteLine(zadanie);
             }
         }
 
@@ -99,7 +100,9 @@ namespace ZadaniaCmd
             {
                 int nrPozycji =
                     int.Parse(OdbierzDane("Podaj nr. pozycji do usunięcia"));
-                zadania.RemoveAt(nrPozycji-1);
+                List<Zadanie> lzadan = organizer.ListaZadan() as List<Zadanie>;
+                
+                lzadan?.RemoveAt(nrPozycji-1);
             }
             catch (Exception ex)
             {

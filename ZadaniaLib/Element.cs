@@ -11,13 +11,13 @@ namespace Szkolenie.ZadaniaLib
         protected static int ostatnieId;
         protected int id;
         protected string temat;
-        protected bool wykonane;
+        public bool Wykonane { get; protected set; }
 
         public virtual string Temat { get; set; }
 
         public virtual void Zakoncz()
         {
-            wykonane = true;
+            Wykonane = true;
         }
 
         public abstract string Info();

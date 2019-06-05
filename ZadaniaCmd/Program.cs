@@ -83,7 +83,27 @@ namespace ZadaniaCmd
             //Console.WriteLine(op1.OpisZadania());
             //op1.Splata(500);
             //Console.WriteLine(op1.OpisZadania());
+            OrganizerZadan org1 = new OrganizerZadan();
+            //Zadanie zx=org1[0];//uzycie indexer
+            org1.DodajZadanie(new Zadanie("Test 1", DateTime.Now.AddDays(1)));
+            org1.DodajZadanie(new Zadanie("test 2", DateTime.Now.AddDays(-3)));
+            org1[1].Zakoncz();
+            var wynik = from z in org1.ListaZadan()
+                        where z.Wykonane == false
+                        select z.KrotkiOpis();
+                        //select new { tytul = z.Temat, termin = z.TerminWykonania };
 
+            var wynik2 = org1.ListaZadan()
+                        .Where(z => !z.Wykonane).Select(z => z.Temat);
+
+            foreach (var item in wynik)
+            {
+                
+                Console.WriteLine(item);
+            }
+
+            int a = 10;
+            int b = a.Razy(3);
         }
 
         private static void Op1_PrzySplacie(object sender, EventArgs e)

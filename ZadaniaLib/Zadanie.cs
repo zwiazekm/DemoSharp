@@ -40,14 +40,14 @@ namespace Szkolenie.ZadaniaLib
         {
             return $"ID: {id}, Temat: {temat}," +
                 $" Termin: {planowanyTermin.ToShortDateString()}, " +
-                $"Wyknane:{wykonane}";
+                $"Wyknane:{Wykonane}";
         }
 
         public string OpisZadaniaN()
         {
             return $"ID: {id}, Temat: {temat}," +
                 $" Termin: {planowanyTermin.ToShortDateString()}, " +
-                $"Wyknane:{wykonane}";
+                $"Wyknane:{Wykonane}";
         }
 
         public override void Zakoncz()
@@ -91,6 +91,11 @@ namespace Szkolenie.ZadaniaLib
         }
 
         public DateTime? TerminWykonania { get; set; }
+
+        public override string ToString()
+        {
+            return OpisZadania();
+        }
     }
 }
 
