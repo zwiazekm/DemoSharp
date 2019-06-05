@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Szkolenie.ZadaniaLib
 {
-    public class Zadanie
+    public class Zadanie: Element
     {
-        private static int ostatnieId;
-        protected int id;
-        protected string temat;
         protected DateTime planowanyTermin;
-        protected bool wykonane;
-
+               
         static Zadanie()
         {
             //Console.WriteLine("Konstruktor statyczny");
@@ -54,14 +50,19 @@ namespace Szkolenie.ZadaniaLib
                 $"Wyknane:{wykonane}";
         }
 
-        public void Zakoncz()
+        public override void Zakoncz()
         {
-            wykonane = true;
+            base.Zakoncz(); //Wywołanie metody bazowej
             TerminWykonania = DateTime.Today;
         }
+        //implementacja metody abstrakcyjnej
+        public override string Info()
+        {
+            return OpisZadania();
+        }
 
-        //property
-        public string Temat
+        //property implementacja property virtual
+        public override string Temat
         {
             get { return temat; }
             set {

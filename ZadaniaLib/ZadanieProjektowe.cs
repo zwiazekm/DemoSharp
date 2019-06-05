@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Szkolenie.ZadaniaLib
 {
-    public class ZadanieProjektowe: Zadanie
+    //Sealed nie można dziedziczy po tej klasie
+    public sealed class ZadanieProjektowe: Zadanie
     {
         public string NrZadania { get; set; }
         public string Projekt { get; set; }
@@ -39,6 +40,11 @@ namespace Szkolenie.ZadaniaLib
         {
             return $"Pr-{id}, T: {temat}, Termin: {planowanyTermin}, " +
                $"Projekt:{Projekt}, Status: {Status}";
+        }
+
+        public override string ToString()
+        {
+            return OpisZadania();
         }
     }
 }

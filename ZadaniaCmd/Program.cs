@@ -29,6 +29,15 @@ namespace ZadaniaCmd
             Console.WriteLine("-------------");
             Console.WriteLine(zp1.OpisZadaniaN());
             Console.WriteLine(z3.OpisZadaniaN());
+
+            Console.WriteLine(zp1);
+            Console.WriteLine(z3);
+            object o = zp1;
+            Console.WriteLine(o);
+
+
         }
     }
+
+
 }
