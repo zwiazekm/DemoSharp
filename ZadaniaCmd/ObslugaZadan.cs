@@ -93,6 +93,16 @@ namespace ZadaniaCmd
             }
         }
 
+        private static void ZadaniaPrzeterminowane()
+        {
+            Console.WriteLine("Lista zadań przeterminowanych:");
+            IWyszukiwanieZadan wyszukiwanie = (IWyszukiwanieZadan)organizer;
+            foreach (var item in wyszukiwanie.ZadaniaPrzeterminowane())
+            {
+                Console.WriteLine(item);
+            }
+        }
+
         private static void UsunZadanie()
         {
             ListaZadan();

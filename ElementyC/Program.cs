@@ -25,6 +25,28 @@ namespace ElementyC
             //    Console.WriteLine(ex.Message);
             //}
             //Console.WriteLine("Po catch main");
+            //TypyWartoscioweReferencyjne();
+            DemoDestructor dd2;
+            DemoDestructor dd;
+            using (dd = new DemoDestructor())
+            {
+
+                dd.LiczbaSobie = 30;
+
+                 dd2 = dd;
+                //dd.Dispose();
+            }
+            dd = null;
+            dd2 = new DemoDestructor();
+            dd2.LiczbaSobie = 50;
+
+            //GC.Collect();
+            Console.WriteLine("Wcisnij enter");
+            Console.ReadLine();
+        }
+
+        private static void TypyWartoscioweReferencyjne()
+        {
             int a = 10;
             int b = a;
             b = 30;
@@ -42,9 +64,8 @@ namespace ElementyC
             p1.name = "Janko Walski";
             Console.WriteLine($"{p1.name}, wiek: {p1.age}");
             Console.WriteLine($"{p2.name}, wiek: {p2.age}");
-
         }
- 
+
         public static void MetodaZBledem()
         {
             try
@@ -87,7 +108,7 @@ namespace ElementyC
             int[,] tabela = new int[4, 3]; //tablica dwuwymiarowa
             liczby[0] = 23;
             tabela[1, 2] = 4;
-            int[] liczby2 = { 12, 41, 41, 12,52};
+            int[] liczby2 = { 12, 41, 41, 12, 52 };
             object[] objTab = { "test", 123, DateTime.Now };
             foreach (var item in tabela)
             {
@@ -95,11 +116,11 @@ namespace ElementyC
             }
             Array.Resize(ref liczby, 9);
         }
-        
+
         static void Pętle()
         {
             //For
-            for (int i = 0, j=20; i < 20; i+=2, j--)
+            for (int i = 0, j = 20; i < 20; i += 2, j--)
             {
                 if (j == 15)
                     continue; //Przejście do następnego kroku
@@ -112,7 +133,7 @@ namespace ElementyC
 
             //While
             int z = 0;
-            while (z<10)
+            while (z < 10)
             {
                 Console.WriteLine(z++);
             }
@@ -121,7 +142,7 @@ namespace ElementyC
             do
             {
                 Console.WriteLine(z--);
-            } while (z>0);
+            } while (z > 0);
 
             //foreach
             string[] linie = new string[3];
@@ -136,11 +157,11 @@ namespace ElementyC
             int liczba = 20;
             string wynikSprawdzania = "";
             //if
-            if (liczba >10)
+            if (liczba > 10)
             {
                 wynikSprawdzania = "JEst wieksza od 10";
             }
-            else if (liczba < 10 && liczba >=5)
+            else if (liczba < 10 && liczba >= 5)
             {
                 wynikSprawdzania = "Jest z przedzialu 5-10";
             }

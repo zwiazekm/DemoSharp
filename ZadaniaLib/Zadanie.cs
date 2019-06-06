@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Szkolenie.ZadaniaLib
 {
-    public class Zadanie: Element
+    public class Zadanie: Element, IComparable
     {
         protected DateTime planowanyTermin;
                
@@ -95,6 +95,11 @@ namespace Szkolenie.ZadaniaLib
         public override string ToString()
         {
             return OpisZadania();
+        }
+
+        public int CompareTo(object obj)
+        {
+            return 0;//TODO: Dopisać porównywanie
         }
     }
 }

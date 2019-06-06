@@ -44,6 +44,7 @@
     <Compile Include="CustomExtension.cs" />
     <Compile Include="Element.cs" />
     <Compile Include="IObslugaZadan.cs" />
+    <Compile Include="IWyszukiwanieZadan.cs" />
     <Compile Include="NumerZadania.cs" />
     <Compile Include="Oplata.cs" />
     <Compile Include="OrganizerZadan.cs" />

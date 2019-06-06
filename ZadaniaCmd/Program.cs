@@ -101,7 +101,10 @@ namespace ZadaniaCmd
                 
                 Console.WriteLine(item);
             }
-
+            IWyszukiwanieZadan szukaj = org1;
+            IObslugaZadan obsluga =(IObslugaZadan)szukaj;
+            
+            //Użycie metody extension
             int a = 10;
             int b = a.Razy(3);
         }

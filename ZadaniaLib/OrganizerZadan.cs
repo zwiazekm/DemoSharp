@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Szkolenie.ZadaniaLib
 {
-    public class OrganizerZadan : IObslugaZadan
+    public class OrganizerZadan : IObslugaZadan, IWyszukiwanieZadan
     {
         List<Zadanie> listaZadan = new List<Zadanie>();
 
@@ -35,8 +35,17 @@ namespace Szkolenie.ZadaniaLib
 
         public List<string> ZadaniaNieZakonczone()
         {
-            return new List<string>(); //TODO: Dorobić liste zadań
+            var wynik = from z in listaZadan
+                        where z.Wykonane == false
+                        select z.OpisZadania();
+            return wynik.ToList();
         }
+        //Jawna implementacja interfejsu
+        List<string> IWyszukiwanieZadan.ZadaniaPrzeterminowane()
+        {
+            throw new NotImplementedException();
+        }
+
 
         //Indexer
         public Zadanie this[int index]
