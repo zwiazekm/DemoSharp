@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZadaniaWPF"
         mc:Ignorable="d"
-        Title="Zadanie" Height="331.18" Width="564.888" ResizeMode="NoResize" ShowInTaskbar="False">
+        Title="Zadanie" Height="201.58" Width="372.888" ResizeMode="NoResize" ShowInTaskbar="False">
     <Grid>
-        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="332,247,0,0" Height="30" IsCancel="True"/>
-        <Button x:Name="okButton" Content="Ok" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="139,247,0,0" Height="30" IsDefault="True" Click="OkButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="236,119,0,0" Height="30" IsCancel="True"/>
+        <Button x:Name="okButton" Content="Ok" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="43,119,0,0" Height="30" IsDefault="True" Click="OkButton_Click"/>
+        <Label x:Name="label" Content="Tytuł:" HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="label1" Content="Termin:" HorizontalAlignment="Left" Margin="26,66,0,0" VerticalAlignment="Top" Width="72"/>
+        <TextBox  x:Name="tytulText" HorizontalAlignment="Left" Height="23" Margin="103,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <DatePicker x:Name="terminDatePicker" HorizontalAlignment="Left" Margin="103,67,0,0" VerticalAlignment="Top" Width="227" FirstDayOfWeek="Monday"/>
 
     </Grid>
 </Window>
