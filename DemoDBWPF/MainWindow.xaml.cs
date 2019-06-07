@@ -31,7 +31,8 @@ namespace DemoDBWPF
         public MainWindow()
         {
             InitializeComponent();
-            EfListBox.DataContext = dbz.Zadania;
+            //EfListBox.DataContext = dbz.Zadania;
+
         }
 
         private void AdoButton_Click(object sender, RoutedEventArgs e)
