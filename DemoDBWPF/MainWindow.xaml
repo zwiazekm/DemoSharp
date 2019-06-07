@@ -8,8 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="AdoButton" Content="Demo ADO" HorizontalAlignment="Left" Margin="43,27,0,0" VerticalAlignment="Top" Width="100" Height="43" Click="AdoButton_Click"/>
-        <ListBox x:Name="AdoListBox" HorizontalAlignment="Left" Height="129" Margin="220,27,0,0" VerticalAlignment="Top" Width="131"/>
+        <ListBox x:Name="AdoListBox" HorizontalAlignment="Left" Height="100" Margin="220,27,0,0" VerticalAlignment="Top" Width="439"/>
         <Button x:Name="DsButton" Content="DataSet Demo" HorizontalAlignment="Left" Margin="43,87,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="DsButton_Click"/>
+        <Button x:Name="EFDemo" Content="Entity Demo" HorizontalAlignment="Left" Height="39" Margin="43,188,0,0" VerticalAlignment="Top" Width="104" Click="EFDemo_Click"/>
+        <ListBox x:Name="EfListBox" HorizontalAlignment="Left" Height="100" Margin="220,188,0,0" VerticalAlignment="Top" Width="439"/>
+        <Button x:Name="AddDataEF" Content="Dodaj Dane" HorizontalAlignment="Left" Margin="43,246,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="-2.985,-5.362" Height="42" Click="AddDataEF_Click"/>
+        <Button x:Name="SzukajButton" Content="Szukaj" HorizontalAlignment="Left" Height="40" Margin="43,306,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="-1.427,-0.712" Click="SzukajButton_Click"/>
+        <Button x:Name="UpdateButton" Content="Modyfikuj id=3" HorizontalAlignment="Left" Height="40" Margin="46,351,0,0" VerticalAlignment="Top" Width="101" Click="UpdateButton_Click"/>
 
     </Grid>
 </Window>
