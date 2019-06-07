@@ -1,0 +1,15 @@
+﻿<Window x:Class="DemoDBWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoDBWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="AdoButton" Content="Demo ADO" HorizontalAlignment="Left" Margin="43,27,0,0" VerticalAlignment="Top" Width="100" Height="43" Click="AdoButton_Click"/>
+        <ListBox x:Name="AdoListBox" HorizontalAlignment="Left" Height="129" Margin="220,27,0,0" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="DsButton" Content="DataSet Demo" HorizontalAlignment="Left" Margin="43,87,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="DsButton_Click"/>
+
+    </Grid>
+</Window>

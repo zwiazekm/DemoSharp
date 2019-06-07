@@ -1,0 +1,2 @@
+ID: 101, Temat: TEst 1, Termin: 2019-06-06, Wyknane:False
+ID: 102, Temat: Test 2, Termin: 2019-06-16, Wyknane:False

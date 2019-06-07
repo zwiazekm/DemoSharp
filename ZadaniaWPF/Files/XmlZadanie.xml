@@ -1,0 +1,10 @@
+<zadania>
+<zadanie id="1">
+  <tytul>Test 1 xml</tytul>
+  <termin>20190630</termin>
+</zadanie>
+  <zadanie id="2">
+    <tytul>Test 1 xml</tytul>
+    <termin>20190615</termin>
+  </zadanie>
+</zadania>

@@ -54,15 +54,15 @@ namespace ZadaniaWPF
                 DateTime termin = (dialog.terminDatePicker.SelectedDate.HasValue) ?
                     dialog.terminDatePicker.SelectedDate.Value : DateTime.Today;
                 zadania.DodajZadanie(tytul, termin);
-                ZadaniGrid.ItemsSource = zadania.ListaZadan();
+                ZadaniGrid.ItemsSource = (List<Zadanie>)zadania.ListaZadan();
                 MessageBox.Show("Zadanie dodane", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
-                MessageBox.Show(zadania.ListaZadan().ToList().Count().ToString());
+                
             }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ZadaniGrid.ItemsSource = zadania.ListaZadan();
+            ZadaniGrid.ItemsSource = (List<Zadanie>) zadania.ListaZadan();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -127,7 +127,7 @@ namespace ZadaniaWPF
             string info = "";
             foreach (var item in wynik)
             {
-                info += item;
+                info += item + System.Environment.NewLine;
             }
             MessageBox.Show(info);            
         }
